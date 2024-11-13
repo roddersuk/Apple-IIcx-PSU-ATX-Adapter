@@ -2,7 +2,7 @@
 Apple Mac IIcx PSU ATX Adapter
 
 ![Adapter PCB](/docs/PSU%20Adapter%202.png)
-
+ 
 The PSU in these old computers suffer with age, particularly the Rifa capacitors which have a tendency to explode.
 The general consensus seems to be that it isn't worth trying to repair them as this is likely to only extend their life by a few years.
 I therefore decided to replace the guts of the PSU with a mini ATX PSU but there are a couple of issues with hooking it up:
