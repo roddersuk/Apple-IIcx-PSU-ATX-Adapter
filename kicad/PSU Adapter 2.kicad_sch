@@ -11,7 +11,7 @@
 		(company "${Company}")
 	)
 	(lib_symbols
-		(symbol "Connector:ATX-20"
+		(symbol "Connector:ATX-24"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -23,7 +23,7 @@
 					)
 				)
 			)
-			(property "Value" "ATX-20"
+			(property "Value" "ATX-24"
 				(at 6.35 13.97 0)
 				(effects
 					(font
@@ -40,8 +40,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://web.aub.edu.lb/pub/docs/atx_201.pdf#page=20"
-				(at 27.94 -13.97 0)
+			(property "Datasheet" "https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf#page=33"
+				(at 60.96 -13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -49,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "ATX Power supply 20pins"
+			(property "Description" "ATX Power supply 24pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -67,7 +67,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*Mini?Fit*2x10*Vertical* *Mini?Fit*2x10*Horizontal*"
+			(property "ki_fp_filters" "*Mini?Fit*2x12*Vertical* *Mini?Fit*2x12*Horizontal*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,7 +76,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ATX-20_0_1"
+			(symbol "ATX-24_0_1"
 				(rectangle
 					(start -10.16 12.7)
 					(end 10.16 -12.7)
@@ -89,7 +89,7 @@
 					)
 				)
 			)
-			(symbol "ATX-20_1_1"
+			(symbol "ATX-24_1_1"
 				(pin power_out line
 					(at 12.7 -2.54 180)
 					(length 2.54)
@@ -127,9 +127,9 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -2.54 180)
+					(at 12.7 5.08 180)
 					(length 2.54) hide
-					(name "+3.3V"
+					(name "+12V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -144,10 +144,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "-12V"
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 2.54) hide
+					(name "+3.3V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -163,9 +163,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -15.24 90)
+					(at 12.7 -2.54 180)
 					(length 2.54) hide
-					(name "GND"
+					(name "+3.3V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -180,10 +180,10 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at -12.7 10.16 0)
+				(pin power_out line
+					(at 12.7 -10.16 180)
 					(length 2.54)
-					(name "PS_ON#"
+					(name "-12V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -216,10 +216,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -15.24 90)
-					(length 2.54) hide
-					(name "GND"
+				(pin open_collector line
+					(at -12.7 10.16 0)
+					(length 2.54)
+					(name "PS_ON#"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -252,10 +252,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "-5V/NC"
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54) hide
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -271,9 +271,9 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 2.54 180)
+					(at 0 -15.24 90)
 					(length 2.54) hide
-					(name "+5V"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -306,6 +306,24 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at -10.16 0 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 12.7 2.54 180)
 					(length 2.54) hide
@@ -316,7 +334,61 @@
 							)
 						)
 					)
-					(number "20"
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 2.54 180)
+					(length 2.54) hide
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 2.54 180)
+					(length 2.54) hide
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2289,10 +2361,6 @@
 		(uuid "f5392714-822a-4d60-b645-293af7410da0")
 	)
 	(no_connect
-		(at 162.56 101.6)
-		(uuid "2a7f78e5-3c71-493c-8284-b9e28ceae669")
-	)
-	(no_connect
 		(at 59.69 147.32)
 		(uuid "3769467e-8f00-4014-a73d-18f4dbb9612d")
 	)
@@ -2309,12 +2377,12 @@
 		(uuid "8912e36e-f558-4290-8b4b-49746a8a1939")
 	)
 	(no_connect
-		(at 59.69 139.7)
-		(uuid "cc8a384d-7cdd-4e07-af5d-9d2380d48847")
+		(at 162.56 101.6)
+		(uuid "bc011af7-a291-4a44-8dbe-e9eea2279a67")
 	)
 	(no_connect
-		(at 162.56 106.68)
-		(uuid "e60e5131-4514-46a2-8217-0fd7ac3519d9")
+		(at 59.69 139.7)
+		(uuid "cc8a384d-7cdd-4e07-af5d-9d2380d48847")
 	)
 	(wire
 		(pts
@@ -3978,7 +4046,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:ATX-20")
+		(lib_id "Connector:ATX-24")
 		(at 149.86 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3986,8 +4054,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "832773c5-0c6b-47d5-9c30-f891fa6ab36e")
-		(property "Reference" "J2"
+		(uuid "904def8e-a299-40bc-b15c-035a6a473fa3")
+		(property "Reference" "J7"
 			(at 149.86 81.28 0)
 			(effects
 				(font
@@ -3995,7 +4063,7 @@
 				)
 			)
 		)
-		(property "Value" "ATX From PSU"
+		(property "Value" "ATX-24"
 			(at 149.86 83.82 0)
 			(effects
 				(font
@@ -4003,7 +4071,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-20A_2x10_P4.20mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical"
 			(at 149.86 101.6 0)
 			(effects
 				(font
@@ -4012,8 +4080,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://web.aub.edu.lb/pub/docs/atx_201.pdf#page=20"
-			(at 177.8 113.03 0)
+		(property "Datasheet" "https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf#page=33"
+			(at 210.82 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +4089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "ATX Power supply 20pins"
+		(property "Description" "ATX Power supply 24pins"
 			(at 149.86 99.06 0)
 			(effects
 				(font
@@ -4030,70 +4098,82 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "d6d90d17-8b1c-44b3-8957-1d3a42cb8b64")
-		)
-		(pin "5"
-			(uuid "c7ba777f-aea0-470f-9732-7754504829cd")
-		)
-		(pin "20"
-			(uuid "99fb8174-a880-456b-8416-19c9730867a7")
-		)
-		(pin "8"
-			(uuid "ccfb62fc-67ce-4af0-87f7-5c6919b2e0bb")
-		)
-		(pin "6"
-			(uuid "6dcc904b-35dc-42fc-aa83-4df78faac7ca")
-		)
-		(pin "7"
-			(uuid "873475f4-4ddc-44b8-9e58-8f9ea7741682")
-		)
-		(pin "9"
-			(uuid "be0a1abf-fe75-4462-b3ca-dd97ecd850ab")
+		(pin "22"
+			(uuid "9d45a274-d186-477d-b4c5-453bc08ce74a")
 		)
 		(pin "4"
-			(uuid "7edb386d-f1e3-488a-a33b-c5fa87f7faeb")
-		)
-		(pin "14"
-			(uuid "90b313bc-8104-4b16-afb2-aa4905bdac44")
-		)
-		(pin "15"
-			(uuid "40702fb4-08f5-44ec-8f65-01e27310587f")
-		)
-		(pin "12"
-			(uuid "e7b3ad3c-f218-4e2d-a9b9-d69f662b4189")
-		)
-		(pin "18"
-			(uuid "2a116838-3d25-4ee8-b4e2-9d5cc7b13063")
-		)
-		(pin "19"
-			(uuid "178c7eb4-b68b-47db-a04c-d799f7b94003")
-		)
-		(pin "17"
-			(uuid "b7d1f5b7-2862-495b-b1e8-392a722765d8")
-		)
-		(pin "3"
-			(uuid "14e72be3-e807-41e8-993c-0ee3c607103c")
+			(uuid "556c6f0e-61e4-40c9-8bf1-a54d1f17d448")
 		)
 		(pin "16"
-			(uuid "aeb59032-e16b-448b-b398-f98356a3af42")
+			(uuid "3409f95b-6feb-489b-9319-7b9306789942")
 		)
-		(pin "11"
-			(uuid "929cfb98-9ab5-402b-b2ab-f9be8107c0e9")
+		(pin "6"
+			(uuid "56d12203-1656-42a8-9d19-d159e1caffd2")
 		)
-		(pin "10"
-			(uuid "f2bbcd84-3e90-4bba-9712-42b168be07a1")
+		(pin "5"
+			(uuid "f42952e3-b009-4639-81e1-0f2617d1c96d")
+		)
+		(pin "24"
+			(uuid "4aed1198-a292-4b72-9302-437367867b4e")
+		)
+		(pin "21"
+			(uuid "712b7356-b948-4dbc-a718-deab4c46d3e0")
+		)
+		(pin "3"
+			(uuid "5513bce1-9cc7-402e-8e52-c916300ef424")
+		)
+		(pin "23"
+			(uuid "4e064d5f-79a8-4df0-8a7c-0ea8d4a1b138")
+		)
+		(pin "17"
+			(uuid "af105c5e-5c99-46c2-9155-9c1b38eb422d")
+		)
+		(pin "19"
+			(uuid "6521f5c8-3365-4f1a-a306-ba365b4bb3b2")
+		)
+		(pin "9"
+			(uuid "49fef982-d089-48fe-9764-7d87db96db99")
+		)
+		(pin "12"
+			(uuid "f578d633-04e2-4d60-8351-44941a0fccb8")
+		)
+		(pin "18"
+			(uuid "b3497ecc-8c6b-4bee-a806-dafd3488cc38")
+		)
+		(pin "7"
+			(uuid "e299dd87-719a-42b3-8492-106bdf645b9c")
 		)
 		(pin "1"
-			(uuid "8dd45454-c6aa-4e38-94e0-8904ff27a93e")
+			(uuid "35417138-604e-45e9-847e-c747a0efd811")
 		)
 		(pin "13"
-			(uuid "1c63bd9d-e1f1-41d6-9258-1f340f7e6ba5")
+			(uuid "23977fc1-2e0f-481d-9b1c-810be5f8d84d")
+		)
+		(pin "14"
+			(uuid "138a710b-b7fd-4435-9f8e-11a635d6cf42")
+		)
+		(pin "8"
+			(uuid "f0958038-7cec-49e4-9fbe-84903261e572")
+		)
+		(pin "10"
+			(uuid "1dfcc796-5738-46dd-8be7-54c6ad93062c")
+		)
+		(pin "11"
+			(uuid "5ce83e39-abf7-449b-84ce-ff529e62627c")
+		)
+		(pin "2"
+			(uuid "11dd99e2-e5b1-4afa-8477-60ad2337761f")
+		)
+		(pin "15"
+			(uuid "52ef9b3e-40e4-4000-b43b-34d38201589f")
+		)
+		(pin "20"
+			(uuid "481efead-6b73-4500-8d09-b83fe834b104")
 		)
 		(instances
 			(project ""
 				(path "/aa6810f0-306b-47aa-aed9-06c517ff2e59"
-					(reference "J2")
+					(reference "J7")
 					(unit 1)
 				)
 			)
