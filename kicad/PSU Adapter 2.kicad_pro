@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.4,
-          "height": 3.3,
-          "width": 2.7
+          "drill": 2.5,
+          "height": 3.9,
+          "width": 3.9
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -600,7 +600,7 @@
     "Company": "Parksyde Retro",
     "Designer": "Rod Thomas",
     "Github": "https://github.com/roddersuk/Apple-IIcx-PSU-ATX-Adapter",
-    "Revision": "0.2",
+    "Revision": "0.3",
     "Title": "Apple Mac IIcx PSU ATX Adapter"
   }
 }
