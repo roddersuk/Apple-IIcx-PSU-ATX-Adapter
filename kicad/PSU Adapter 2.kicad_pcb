@@ -121,7 +121,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "Gerber 0.3")
+			(outputdirectory "Gerber")
 		)
 	)
 	(property "Company" "Parksyde Retro")
