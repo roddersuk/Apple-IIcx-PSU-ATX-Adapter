@@ -2319,10 +2319,10 @@
 		(uuid "43b7df51-a3d1-4203-a639-cf2d9944a037")
 	)
 	(junction
-		(at 177.8 123.19)
+		(at 177.8 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "678c343c-7896-4599-8dd1-dffcf8cf44d5")
+		(uuid "4afb8abd-9a5d-4ef8-a750-154bc1b1cec1")
 	)
 	(junction
 		(at 233.68 101.6)
@@ -2446,16 +2446,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 123.19) (xy 185.42 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b1ba6bc-a1d1-4bd6-9f60-bf5d320685b6")
-	)
-	(wire
-		(pts
 			(xy 177.8 134.62) (xy 200.66 134.62)
 		)
 		(stroke
@@ -2476,16 +2466,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 73.66) (xy 177.8 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0eea4007-97af-4d9d-868e-750038648c5a")
-	)
-	(wire
-		(pts
 			(xy 200.66 128.27) (xy 200.66 130.81)
 		)
 		(stroke
@@ -2503,6 +2483,16 @@
 			(type default)
 		)
 		(uuid "1945e355-1131-4419-ad51-10b10def5577")
+	)
+	(wire
+		(pts
+			(xy 177.8 128.27) (xy 185.42 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f09d900-e182-41ad-b7a8-7fcf5fb088d5")
 	)
 	(wire
 		(pts
@@ -2546,7 +2536,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 123.19) (xy 177.8 134.62)
+			(xy 177.8 73.66) (xy 177.8 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2673,6 +2663,16 @@
 			(type default)
 		)
 		(uuid "52410349-51e8-4c09-afd2-f51b0ac23903")
+	)
+	(wire
+		(pts
+			(xy 177.8 128.27) (xy 177.8 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c0db16-1dc6-4aa5-aad6-4b86eb5b0c23")
 	)
 	(wire
 		(pts
@@ -2836,16 +2836,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 88.9) (xy 130.81 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7afadd98-099a-4653-8e66-6c82737eea7a")
-	)
-	(wire
-		(pts
 			(xy 190.5 73.66) (xy 177.8 73.66)
 		)
 		(stroke
@@ -2883,6 +2873,16 @@
 			(type default)
 		)
 		(uuid "7f417d4f-a695-4226-9260-db85931f9be5")
+	)
+	(wire
+		(pts
+			(xy 130.81 88.9) (xy 130.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82521a8b-2fab-4e9e-b701-a1e03defeb3c")
 	)
 	(wire
 		(pts
@@ -3196,6 +3196,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 123.19) (xy 185.42 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecfcfe7a-1a17-4c09-9107-8508a927aaa1")
+	)
+	(wire
+		(pts
 			(xy 92.71 106.68) (xy 92.71 110.49)
 		)
 		(stroke
@@ -3224,16 +3234,6 @@
 		)
 		(uuid "fb05fd73-7569-4965-803a-7c95d40a124e")
 	)
-	(wire
-		(pts
-			(xy 130.81 128.27) (xy 185.42 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb65ce29-4674-4bbd-be27-c9f4261fe843")
-	)
 	(label "AC -ve"
 		(at 48.26 104.14 0)
 		(fields_autoplaced yes)
@@ -3256,17 +3256,6 @@
 		)
 		(uuid "2ca210f5-7768-454b-b835-900e036c4c80")
 	)
-	(label "PS_ON"
-		(at 168.91 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "31e5e17c-518a-4945-92ac-4ff2310dca38")
-	)
 	(label "GND"
 		(at 223.52 111.76 0)
 		(fields_autoplaced yes)
@@ -3288,6 +3277,17 @@
 			(justify left bottom)
 		)
 		(uuid "63c8e0da-4406-41f1-ad60-e65a7b212c82")
+	)
+	(label "PS_ON"
+		(at 179.07 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cb8bf0f-de4e-469d-a995-542f675a7bce")
 	)
 	(label "-12V"
 		(at 222.25 114.3 0)
@@ -4116,7 +4116,7 @@
 				)
 			)
 		)
-		(property "Value" "ATX-24"
+		(property "Value" "ATX From PSU"
 			(at 149.86 83.82 0)
 			(effects
 				(font
@@ -4124,7 +4124,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical"
+		(property "Footprint" "Library:Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical_Chinese"
 			(at 149.86 101.6 0)
 			(effects
 				(font
@@ -4614,7 +4614,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XA_B02B-XASK-1-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XA_B02B-XASK-1_1x02_P2.50mm_Vertical"
 			(at 144.78 66.04 0)
 			(effects
 				(font

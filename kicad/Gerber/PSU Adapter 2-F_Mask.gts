@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.6*
-G04 #@! TF.CreationDate,2024-12-17T06:09:13+00:00*
-G04 #@! TF.ProjectId,PSU Adapter 2,50535520-4164-4617-9074-657220322e6b,0.3*
+G04 #@! TF.CreationDate,2024-12-18T16:50:49+00:00*
+G04 #@! TF.ProjectId,PSU Adapter 2,50535520-4164-4617-9074-657220322e6b,0.4*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 8.0.6) date 2024-12-17 06:09:13*
+G04 Created by KiCad (PCBNEW 8.0.6) date 2024-12-18 16:50:49*
 %MOMM*%
 %LPD*%
 G01*
